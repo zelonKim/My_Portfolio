@@ -119,23 +119,34 @@ body {
 /*face1 - Main Programming Language*/
 .wrap #circle .face1 .inner > div {
   width: 600px;
-  height: 400px;
+  height: 390px;
   float: left;
   margin-bottom: 20px;
   text-align: center;
 }
 
+.wrap #circle .face1 .inner > div a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .wrap #circle .face1 .inner > div h2 {
+  position: relative;
+  top: -10px;
   letter-spacing: 2px;
   transition: all 0.5s;
 }
 
+.wrap #circle .face3 .inner > div p {
+  font: 20px/1.3 "arial";
+  color: #ddd;
+}
+
 .wrap #circle .face1 .inner > div img {
-  width: 85%;
-  height: 80%;
-  margin-top: 35px;
-  margin-bottom: 25px;
-  border-radius: 15px;
+  width: 76%;
+  height: 68%;
+  margin-top: 25px;
+  border-radius: 20px;
 }
 
 .wrap #circle .face1 .inner > div:nth-of-type(odd) {
@@ -147,19 +158,27 @@ body {
   width: 100%;
   height: 100%;
 }
+
+.wrap #circle .face2 .inner > div a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .wrap #circle .face2 .inner > div img {
   width: 100%;
   margin-top: 30px;
-  margin-bottom: 40px;
-  border-radius: 15px;
+  margin-bottom: 10px;
+  border-radius: 20px;
   border: 1px solid #fff;
 }
 .wrap #circle .face2 .inner > div h3 {
   color: #fff;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  margin-top: 40px;
 }
 .wrap #circle .face2 .inner > div p {
-  font: 18px/1.3 "arial";
+  font: 20px/1.3 "arial";
+  margin: 3px;
   color: #ccc;
 }
 
@@ -169,19 +188,26 @@ body {
   height: 253px;
   margin-bottom: 20px;
 }
+
+.wrap #circle .face3 .inner > div a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .wrap #circle .face3 .inner > div .pic {
   width: 120px;
   height: 120px;
   background-repeat: no-repeat;
   background-position: center top;
   overflow: hidden;
-  border-radius: 15px;
   border: 1px solid #fff;
   float: left;
   position: relative;
   top: 15px;
   background-size: cover;
+  border-radius: 20px;
 }
+
 .wrap #circle .face3 .inner > div:nth-of-type(1) .pic {
   background-image: url(../img/nodejs.webp);
 }
@@ -197,11 +223,13 @@ body {
 }
 .wrap #circle .face3 .inner > div .con h2 {
   color: #fff;
+  margin-bottom: 9px;
+  margin-top: 10px;
 }
 .wrap #circle .face3 .inner > div .con p {
-  font: 18px/1.3 "arial";
+  font: 20px/1.3 "arial";
   color: #ddd;
-  margin-top: 20px;
+  margin: 2px;
 }
 .wrap #circle .face3 .inner > div .con span {
   position: absolute;
@@ -224,7 +252,7 @@ body {
   float: left;
   position: relative;
   bottom: 20px;
-  left: 30px;
+  left: 20px;
   background-size: cover;
 }
 
@@ -235,9 +263,9 @@ body {
 }
 
 .wrap #circle .face4 .inner > div {
-  width: 50%;
+  width: 47%;
   height: 180px;
-  margin-bottom: 20px;
+  margin: 10px;
 }
 
 .wrap #circle .face4 .inner > div i {
@@ -293,45 +321,129 @@ body {
 }
 
 /*face5 - Tooling*/
-.wrap #circle .face5 .inner > div {
-  width: 100%;
-  height: 100%;
-}
-.wrap #circle .face5 .inner div img {
-  margin-bottom: 40px;
-}
-.wrap #circle .face5 .inner div .pic {
-  width: 100%;
-  height: 250px;
-  border: 1px solid #bbb;
-  box-sizing: border-box;
-  background: rgba(0, 0, 0, 0.3) url(../img/robot.png) no-repeat center
-    center/cover;
-  margin-bottom: 50px;
-}
-.wrap #circle .face5 .inner div .reflection {
+.wrap #circle .face5 .inner {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-repeat: no-repeat;
+  background-position: center top;
+  border-radius: 100px;
   position: absolute;
-  top: 100%;
-  right: 0%;
-  transition: all 0.5s;
+  bottom: 20px;
+  background-size: cover;
 }
-.wrap #circle .face5:hover .inner div .reflection {
-  top: -40%;
+
+.wrap #circle .face5 .inner > div a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.wrap #circle .face5 .inner > div:nth-of-type(1) {
+  width: 285px;
+  height: 380px;
+  float: left;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.wrap #circle .face5 .inner > div:nth-of-type(1) img {
+  width: 95%;
+  height: 65%;
+  margin-top: 30px;
+  margin-bottom: 25px;
+  border: 1px solid #fff;
+}
+
+.wrap #circle .face5 .inner > div:nth-of-type(1) h2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font: bold 25px/1 "orbitron";
+}
+
+.wrap #circle .face5 .inner > div:nth-of-type(2) {
+  width: 285px;
+  height: 380px;
+  float: left;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.wrap #circle .face5 .inner > div:nth-of-type(2) img {
+  width: 95%;
+  height: 65%;
+  margin-top: 30px;
+  margin-bottom: 25px;
+  border: 1px solid #fff;
+}
+
+.wrap #circle .face5 .inner > div:nth-of-type(2) h2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font: bold 25px/1 "orbitron";
+}
+
+.wrap #circle .face5 .inner > div:nth-of-type(3) {
+  width: 285px;
+  height: 380px;
+  float: left;
+  text-align: center;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.wrap #circle .face5 .inner > div:nth-of-type(3) img {
+  width: 95%;
+  height: 65%;
+  margin-top: 30px;
+  margin-bottom: 25px;
+
+  border: 1px solid #fff;
+}
+
+.wrap #circle .face5 .inner > div:nth-of-type(3) h2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font: bold 25px/1 "orbitron";
+}
+
+.wrap #circle .face5 .inner > div:nth-of-type(4) {
+  width: 285px;
+  height: 380px;
+  float: left;
+  text-align: center;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.wrap #circle .face5 .inner > div:nth-of-type(4) img {
+  width: 95%;
+  height: 65%;
+  margin-top: 30px;
+  margin-bottom: 25px;
+  border: 1px solid #fff;
+}
+
+.wrap #circle .face5 .inner > div:nth-of-type(4) h2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font: bold 25px/1 "orbitron";
 }
 
 /* face6 - Sub Framework */
 .wrap #circle .face6 .inner > div .pic {
-  width: 120px;
+  width: 100px;
   height: 120px;
   background-repeat: no-repeat;
   background-position: center top;
   overflow: hidden;
-  border-radius: 100px;
+  border-radius: 100%;
   border: 1px solid #fff;
   float: left;
   position: relative;
   bottom: 15px;
+  left: 15px;
   background-size: cover;
+  margin-right: 22px;
 }
 
 .wrap #circle .face6 .inner > div {
@@ -339,6 +451,12 @@ body {
   height: 185px;
   margin-bottom: 20px;
 }
+
+.wrap #circle .face6 .inner > div a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .wrap #circle .face6 .inner > div i {
   width: 22%;
   height: 100%;
@@ -360,8 +478,12 @@ body {
   float: right;
 }
 .wrap #circle .face6 .inner > div .con p {
-  font: 18px/1 "arial";
+  font: 20px/1.3 "arial";
   color: #999;
+}
+
+.wrap #circle .face6 .inner > div .con h2 {
+  margin-bottom: 8px;
 }
 
 .wrap #circle .face6 .inner > div:nth-of-type(1) .pic {
@@ -424,19 +546,17 @@ body {
 }
 
 /*face8 - Sub Programming Language*/
+
+.wrap #circle .face8 .inner > div a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .wrap #circle .face8 .inner > div:nth-of-type(1) {
   width: 100%;
-  height: 400px;
-  margin-bottom: 20px;
+  height: 385px;
+  margin-bottom: 22px;
   text-align: center;
-}
-.wrap #circle .face8 .inner > div:nth-of-type(1) i {
-  color: #fff;
-  font-size: 200px;
-  position: absolute;
-  bottom: 60px;
-  left: 50px;
-  opacity: 0.9;
 }
 
 .wrap #circle .face8 .inner > div:nth-of-type(1) img {
@@ -444,28 +564,23 @@ body {
   height: 80%;
   margin-top: 35px;
   margin-bottom: 25px;
-  border-radius: 190px;
+  border-radius: 50%;
 }
 
 .wrap #circle .face8 .inner > div:nth-of-type(2) {
   width: 290px;
-  height: 380px;
+  height: 390px;
   margin-right: 20px;
   float: left;
   text-align: center;
 }
-.wrap #circle .face8 .inner > div:nth-of-type(2) i {
-  font-size: 120px;
-  color: #fff;
-  opacity: 0.8;
-}
 
 .wrap #circle .face8 .inner > div:nth-of-type(2) img {
-  width: 110%;
+  width: 100%;
   height: 80%;
-  margin-top: 20px;
+  margin-top: 25px;
   margin-bottom: 25px;
-  border-radius: 90px;
+  border-radius: 100%;
 }
 
 .wrap #circle .face8 .inner > div:nth-of-type(2) h3 {
@@ -473,34 +588,49 @@ body {
   margin-bottom: 14px;
   font: bold 20px/1 "orbitron";
 }
-.wrap #circle .face8 .inner > div:nth-of-type(2) p {
-  font: 16px/1 "arial";
-  color: #ccc;
-}
 
 .wrap #circle .face8 .inner > div:nth-of-type(3) {
   width: 290px;
-  height: 380px;
+  height: 390px;
   float: left;
   text-align: center;
-}
-.wrap #circle .face8 .inner > div:nth-of-type(3) i {
-  font-size: 120px;
-  color: #fff;
-  opacity: 0.8;
 }
 
 .wrap #circle .face8 .inner > div:nth-of-type(3) img {
   width: 100%;
   height: 80%;
-  margin-top: 20px;
+  margin-top: 25px;
   margin-bottom: 25px;
-  border-radius: 90px;
+  border-radius: 100%;
 }
 .wrap #circle .face8 .inner > div:nth-of-type(3) h3 {
   margin-top: 15px;
   margin-bottom: 14px;
   font: bold 20px/1 "orbitron";
+}
+
+/*face9 -Web Development*/
+.wrap #circle .face9 .inner > div {
+  position: absolute;
+  border-radius: 20%;
+  top: -100px;
+  bottom: -160px;
+  width: 120%;
+  height: 100%;
+}
+
+.wrap #circle .face9 .inner > div a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.wrap #circle .face9 .inner > div img {
+  width: 100%;
+  height: 100%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-radius: 45%;
+  border: 1px solid #fff;
 }
 
 /* 3D 배치 */
@@ -527,4 +657,7 @@ body {
 }
 .face8 {
   transform: rotateY(225deg) translateZ(-764px);
+}
+.face9 {
+  transform: rotateX(-270deg) translateZ(-400px);
 }
